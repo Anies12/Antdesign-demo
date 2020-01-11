@@ -19,6 +19,8 @@ const columns = (showModal) => [{
   render: (text, record, index) => (
     <Icon
       type="delete"
+      onClick={() => showModal(index)}
+      style={{ marginRight: '15px', fontSize: '15px' }}
     />
   ),
 }];
