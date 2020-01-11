@@ -1,0 +1,43 @@
+.TableComp__removeModal * {
+    border-radius: 2px;
+}
+
+.TableComp__removeModal .ant-modal-header {
+    background: #69488f;
+    border-bottom: 1px solid #c3b7d3;
+}
+
+.TableComp__removeModal .ant-modal-title {
+    color: #ffffff
+}
+
+.TableComp__removeModal .ant-modal-footer {
+    border-top: 0px;
+    padding: 0px 16px 20px;
+}
+
+.TableComp__removeModal .ant-modal-body {
+    padding: 24px 24px 10px;
+}
+
+.TableComp__removeModal .ant-modal-content .ant-btn:first-of-type {
+    position: relative;
+    left: 60px;
+}
+
+.TableComp__removeModal .ant-btn-primary {
+    position: relative;
+    right: 90px;
+    background: #fff;
+    color: #000000a6;
+}
+
+.TableComp__removeModal .ant-btn:hover, .TableComp__removeModal .ant-btn:focus {
+    color: #5e646f;
+    background-color: #f9f9f9;
+    border-color: #e6d8d8;
+}
+
+.TableComp__removeModal--modalbody {
+    font-size: 18px;
+}

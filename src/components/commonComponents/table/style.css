@@ -1,0 +1,85 @@
+.TableComp__antTable {
+    border-color: #f6f6f6;
+    margin: 40px;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.TableComp__antTable * {
+    border-radius: 2px;
+}
+
+.TableComp__antTable .ant-table-body {
+    height: 40vh;
+    overflow-y: scroll;
+}
+
+.TableComp__antTable .TableComp__antTable--antSelect {
+    width: 92%;
+    margin-right: 5px;
+}
+
+.TableComp__antTable .ant-table-title {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 0;
+}
+
+.TableComp__antTable .ant-select-arrow {
+    user-select: none;
+    width: 30.6px;
+    height: 31.78px;
+    margin-top: -16px;
+    margin-right: -12px;
+    padding-top: 10px;
+    background: #ebebeb;
+    border-bottom-style: ridge;
+}
+
+.TableComp__antTable .ant-table-thead {
+    cursor: pointer;
+}
+
+.TableComp__tableHeader {
+    display: flex;
+    justify-content: space-between;
+    background: #f9f9f9;
+    padding-right: 14px;
+}
+
+.TableComp__tableHeader .ant-btn {
+    border-style: none;
+}
+
+.TableComp__antTable .ant-btn {
+    background: #f9f9f9;
+    min-width: 66px;
+}
+
+.TableComp__antTable .ant-btn:hover, .TableComp__antTable .ant-btn:focus {
+    color: #5e646f;
+    background-color: #f9f9f9;
+    border-color: #e6d8d8;
+}
+
+.TableComp__tableHeader--sortActive {
+    color: #434343
+}
+
+.TableComp__tableHeader--sortInActive {
+    color: #8b8888
+}
+
+.TableComp__antTable--selectButtnsContainer {
+    display: flex
+}
+
+.TableComp__tableHeade--dateSortButtn {
+    margin-left: 16%
+}
+
+.TableComp__antTable__MainSelectContainer {
+    display: flex;
+    padding-right: 14px;
+    justify-content: space-between
+}
