@@ -1,8 +1,9 @@
 import React from 'react';
+import MainPage from './components/MainPage/index';
 
 function App() {
   return (
-    <h3>Hello world</h3>
+    <MainPage />
   );
 }
 
