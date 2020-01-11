@@ -62,16 +62,24 @@
     border-color: #e6d8d8;
 }
 
+.TableComp__tableHeader--sortActive {
+    color: #434343
+}
+
+.TableComp__tableHeader--sortInActive {
+    color: #8b8888
+}
+
 .TableComp__antTable--selectButtnsContainer {
     display: flex
+}
+
+.TableComp__tableHeade--dateSortButtn {
+    margin-left: 16%
 }
 
 .TableComp__antTable__MainSelectContainer {
     display: flex;
     padding-right: 14px;
     justify-content: space-between
-}
-
-.TableComp__tableHeade--dateSortButtn {
-    margin-right: 39%
 }

@@ -1,9 +1,10 @@
 import React, { useReducer, useEffect } from 'react';
 import {
-  Table, Button, Select,
+  Table, Button, Select, Icon,
 } from 'antd';
 import PropTypes from 'prop-types';
 import reducer from './reducer/index';
+import PopoverComponent from './Popover/Popover';
 import columns from './columns';
 import './style.css';
 
@@ -53,6 +54,7 @@ const TableComponent = ({ data, JobRoles }) => {
       <div className="TableComp__antTable__MainSelectContainer">
         <Select
           className="TableComp__antTable--antSelect"
+          showSearch
           placeholder="Select a Role"
           onChange={handleSelectChange}
           value={state.SelectValue}
@@ -67,10 +69,19 @@ const TableComponent = ({ data, JobRoles }) => {
       <div className="TableComp__tableHeader">
         <Button id="nameSortButton" name="name" onClick={handleSort}>
             User Role
+          <Icon
+            type={[1, null].includes(state.sort.sortByName) ? 'arrow-up' : 'arrow-down'}
+            className={state.sort.sortByName ? 'TableComp__tableHeader--sortActive' : 'TableComp__tableHeader--sortInActive'}
+          />
         </Button>
         <Button className="TableComp__tableHeade--dateSortButtn" id="dateSortButton" name="date" onClick={handleSort}>
             Date
+          <Icon
+            type={[1, null].includes(state.sort.sortByDate) ? 'arrow-up' : 'arrow-down'}
+            className={state.sort.sortByDate ? 'TableComp__tableHeader--sortActive' : 'TableComp__tableHeader--sortInActive'}
+          />
         </Button>
+        <PopoverComponent handleFilter={handleFilter} />
       </div>
       <Table
         columns={columns(showModal)}

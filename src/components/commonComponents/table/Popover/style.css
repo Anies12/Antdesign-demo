@@ -1,0 +1,38 @@
+.PopoverComp * {
+    border-radius: 2px;
+}
+
+.PopoverComp {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 220px;
+    height: 300px
+}
+
+.PopoverComp__antSelect .ant-select-selection--single {
+    background: #ebebeb;
+}
+
+.PopoverComp__antSelect--andOrSelect {
+    width: 90px;
+}
+
+.ant-popover-arrow {
+    display: none;
+}
+
+.Popover__buttonsContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Popover__buttonsContainer .ant-btn, .Popover__buttonsContainer .ant-btn:hover, .Popover__buttonsContainer .ant-btn:focus {
+    min-width: 105px;
+    background: #f9f9f9;
+    color: #5e646f;
+}
+
+.PopoverComp--popButton {
+    margin-right: 65px
+}
